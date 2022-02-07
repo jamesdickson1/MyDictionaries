@@ -1,7 +1,10 @@
 # 1) print out the value for the key 'history' using the dictionary below
 
 
-sampleDict = { 
+from genericpath import sameopenfile
+
+
+sampleDict = {
    "class":{ 
       "student":{ 
          "name":"Mike",
@@ -13,15 +16,16 @@ sampleDict = {
    }
 }
 
-
+key = sampleDict["class"]["student"]["marks"]["history"]
+print(key)
 
 
 # 2) Add 2 inches to the son's height.
 
 dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's weight": 25}
 
-
-
+dict["son's height"] = 34
+print(dict)
 
 
 # 3) Given a Python dictionary, Change Brad’s salary to 8500
@@ -32,9 +36,8 @@ sampleDict = {
      'emp3': {'name': 'Brad', 'salary': 6500}
 }
 
-
-
-
+sampleDict["emp3"][3] = 8500
+print(sampleDict)
 
 
 # 4 )Given the dictionary below, add a new key - 'work' with the values shown below:
