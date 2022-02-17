@@ -32,11 +32,15 @@ def main():
     
     input_year = int(input("Which year?"))
 
-    yr = input_year
-    result = yearwins[yr]
-    wins = numwins[result]
+    if input_year == 1904 or input_year == 1994:
+        print("No World Series winner that year")
 
-    print("The team that won in " + str(yr) + " was " + result + ". They have " + str(wins) + " total wins.")
+    else:
+        yr = input_year
+        result = yearwins[yr]
+        wins = numwins[result]
+
+        print("The team that won in " + str(yr) + " was " + result + ". They have " + str(wins) + " total wins.")
 
 
 main()
